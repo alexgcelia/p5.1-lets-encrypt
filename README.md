@@ -101,25 +101,25 @@ networks:
 ### Este contiene información sobre la instalación automatizada
 #### Aquí escribimos nuestro dominio anteriormente creado en NoIP
 ```
-DNS_DOMAIN_SECURE=p5-prestashop.ddns.net
+DNS_DOMAIN_SECURE=alexg-letsencrypt.ddns.net
 ```
 #### Aquí encontramos las variables de MySQL
 ```
 MYSQL_ROOT_PASSWORD=root
 MYSQL_DATABASE=prestashop
-MYSQL_USER=alexg
-MYSQL_PASSWORD=1234
+MYSQL_USER=ps_user
+MYSQL_PASSWORD=admin
 ```
 
 #### Aquí escribiremos las variables para nuestro Prestashop
 ```
-DB_NAME=prestashop
-DB_USER=root
+DB_USER=ps_user
 DB_PASSWD=admin
 DB_PREFIX=ps_
-PS_DOMAIN=p5-prestashop.ddns.net
+DB_NAME=prestashop
+PS_DOMAIN=alexg-letsencrypt.ddns.net
 PS_LANGUAGE=es
 PS_COUNTRY=ES
-ADMIN_MAIL=alexg@demo.com
-ADMIN_PASSWD=prestashop
+ADMIN_MAIL=demo@prestashop.com
+ADMIN_PASSWD=prestashop_demo
 ```
